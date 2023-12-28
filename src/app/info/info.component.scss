@@ -3,12 +3,14 @@
   padding: 8px;
   ion-icon {
     position: absolute;
-    right: 0;
-    font-size: 48px;
+    font-size: 36px;
+    right: 8px;
+    top: 16px;
+    z-index: 1;
   }
   .img-box{
     display: flex;
-    margin-top: 36px;
+    margin-top: 16px;
 
     img{
       height: 100%;
@@ -16,7 +18,7 @@
     }
   }
   .info-box{
-    margin-top: 8px;
+    margin: 8px;
     p {
       margin: 0;
     }

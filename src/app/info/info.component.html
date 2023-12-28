@@ -1,17 +1,17 @@
 
 <div class="content">
+  <ion-icon name="close-circle-outline" (click)="closeModal()"></ion-icon>
   <ion-card>
-    <ion-icon name="close-circle-outline"></ion-icon>
     <div class="img-box">
       <img [src]="info['download_url']" alt="">
     </div>
     <div class="info-box">
-        <p>{{info['author']}}</p>
-        <p>{{info['download_url']}}</p>
-        <p>{{info['height']}}</p>
-        <p>{{info['id']}}</p>
-        <p>{{info['url']}}</p>
-        <p>{{info['width']}}</p>
+        <p><b>Id: </b>{{info['id']}}</p>
+        <p><b>Height: </b>{{info['height']}}</p>
+        <p><b>Width: </b>{{info['width']}}</p>
+        <p><b>Author: </b>{{info['author']}}</p>
+        <!-- <p><b>Author: </b>{{info['download_url']}}</p> -->
+        <!-- <p><b>Author: </b>{{info['url']}}</p> -->
     </div>
   </ion-card>
 </div>
