@@ -14,6 +14,11 @@ ion-content {
         min-width: 100%;
         object-fit: cover;
         position: relative;
+
+        &:hover {
+          scale: 1.1;
+          transition: 500ms ease-in-out;
+        }
       }
 
       .button {

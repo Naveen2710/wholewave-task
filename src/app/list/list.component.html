@@ -5,7 +5,7 @@
       <ng-container *ngIf="item['download_url']; else image">
         <img [src]="item['download_url']" alt="">
         <div class="button">
-          <ion-button shape="round" fill="outline" color="light" (click)="details(item)">info</ion-button>
+          <ion-button shape="round" size="small" fill="outline" color="light" (click)="details(item)">info</ion-button>
         </div>
       </ng-container>
 
