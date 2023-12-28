@@ -1,0 +1,17 @@
+<ion-content>
+  <ion-searchbar animated="true" mode="ios" [debounce]="1000" (ionInput)="search($event.target)"></ion-searchbar>
+  <div class="card-list">
+    <ion-card *ngFor="let item of imageList">
+      <ng-container *ngIf="item['download_url']; else image">
+        <img [src]="item['download_url']" alt="">
+        <div class="button">
+          <ion-button shape="round" fill="outline" color="light" (click)="details(item)">info</ion-button>
+        </div>
+      </ng-container>
+
+      <ng-template #image>
+        <img [src]="item['img']" alt="">
+      </ng-template>
+    </ion-card>
+  </div>
+</ion-content>
