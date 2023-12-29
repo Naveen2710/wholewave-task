@@ -1,17 +1,20 @@
+<ion-header>
+  <ion-button fill="clear" size="small" (click)="modalCtrl.dismiss()"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
+  <span>Back</span>
+</ion-header>
 
-<div class="content">
-  <ion-icon name="close-circle-outline" (click)="closeModal()"></ion-icon>
-  <ion-card>
-    <div class="img-box">
-      <img [src]="info['download_url']" alt="">
-    </div>
-    <div class="info-box">
-        <p><b>Id: </b>{{info['id']}}</p>
-        <p><b>Height: </b>{{info['height']}}</p>
-        <p><b>Width: </b>{{info['width']}}</p>
-        <p><b>Author: </b>{{info['author']}}</p>
-        <!-- <p><b>Author: </b>{{info['download_url']}}</p> -->
-        <!-- <p><b>Author: </b>{{info['url']}}</p> -->
-    </div>
-  </ion-card>
-</div>
+<ion-content>
+  <div class="content">
+    <ion-card>
+      <div class="img-box">
+        <img [src]="info['download_url']" alt="">
+      </div>
+      <div class="info-box">
+          <p><b>Id: </b>{{info['id']}}</p>
+          <p><b>Height: </b>{{info['height']}}</p>
+          <p><b>Width: </b>{{info['width']}}</p>
+          <p><b>Author: </b>{{info['author']}}</p>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>

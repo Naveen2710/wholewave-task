@@ -1,14 +1,10 @@
 
+ion-header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
 .content {
-  padding: 8px;
-  ion-icon {
-    position: absolute;
-    font-size: 36px;
-    right: 8px;
-    top: 16px;
-    z-index: 1;
-    cursor: pointer;
-  }
   ion-card {
     width: 300px;
     .img-box{
@@ -36,7 +32,8 @@
 @media only screen and (max-width: 768px) {
   .content {
     ion-card {
-      width: 100%;
+      width: 95%;
+      margin: 16px auto;
     }
   }
 }
